@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\RequirePackage{ifthen}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[utf8x]{inputenc}
+
+\newif\ifen
+\newif\ifit
+
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\it}[1]{\ifit#1\fi}
+%\ittrue
+\entrue
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Marcello} % Your first name
+\familyname{Rossi} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Via Bellini 199}{Sesto San Giovanni (MI)}
+\mobile{+39 347 3914704}
+\email{marc89rossi@gmail.com}
+\homepage{www.linkedin.com/in/marcello-rossi-40301594}{linkedin.com/marcello-rossi} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\photo[70pt][0.4pt]{pictures/photo} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+
+
+
+\section{\en{Experience}\it{Esperienza}}
+
+\subsection{\en{IT Consultant}\it{Consulente IT}}
+
+\cventry
+{\it{2014--Oggi}\en{2014--Today}}
+{\it{Consulenza IT per applicazioni di Clearing And Custody}\en{IT Consulting for Clearing and Custody applications}}{\textsc{Altran Italia}}{Milano}
+{}
+{\it{Consulente IT presso BNP Paribas Security Services. Sviluppo di applicativi in architettura .NET in metodologia SCRUM e gestione completa del ciclo di vita del progetto: raccolta dei requisiti, sviluppo, testing e coordinamento rilascio.}
+\en{IT Consultant at BNP Paribas Security Services. .NET softwares development in SCRUM methodology and complete management of the application lifecycle: requirments gathering, development, testing and deployment coordination.}
+\newline{}\newline{}
+\it{Competenze acquisite}\en{Acquired skills}:
+\begin{itemize}
+\item \it{C\# e programmazione ad oggetti in .NET framework 4.5}\en{C\# and object oriented programming in .NET framework 4.5}
+\item \it{Application Lifecicle Management (ALM)}\en{Application Lifecicle Management (ALM)}
+\item \it{Sviluppo di applicazioni Web (JS, Anagular Js, Backbone.js, Web Components)}\en{Web application development (JS, Anagular Js, Backbone.js, Web Components)}
+\item \it{Sviluppo batch}\en{Batch software development}
+\item \it{Database relazionali}\en{Relational databases} (SQL Server, MySQL)
+\item \it{Sviluppo Software in Test Driven Development (TDD)}\en{Software Development in Test Driven Development (TDD)}
+\item \it{Metodologia SCRUM}\en{SCRUM methodology}
+\item \it{Analisi di progetto e raccolta dei requisiti}\en{Project analysis and requirement gathering}
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\it{Educazione}\en{Education}}
+
+\cventry{2011--2014}{\it{Laurea Magistrale in Fisica Teorica}\en{Master degree in Theoretical Physics}}{Università degli Studi di Milano - Bicocca}{Milano}{\it{Voto di uscita: 109}\en{Final degree: 109}}{\it{Fisica teorica, calcolo computazionale e simulazioni Monte Carlo, statistica avanzata, dinamica molecolare al calcolatore, studio di processi stocastici, catene di Markov e meccanica statistica.}\en{Theoretical physics, computational calculus, Monte Carlo simulations, advanced statistics, molecular dynamics, stochastic processes, Markov chains and statistical mechanics.}}
+\cventry{2008--2011}{\it{Laurea Triennale in Fisica}\en{Bachelor degree in Physics}}{Università degli Studi di Milano - Bicocca}{Milano}{\it{Voto di uscita: 107}\en{Final degree: 107}}{\it{Programmazione (fortran, C++), calcolo analitico, statistica, fisica classica, relatività ristretta, relatività generale, meccanica quantistica, algoritmi di interpolazione.}\en{Programming languages (Java, MatLab, fortran, C++), analytic calculus, statistics, classical physics, special relativity, general relativity, quantum mechanics, experience in didactic laboratories.}}
+
+
+\section{\it{Tesi di Laurea}\en{Master Thesis}}
+
+\cvitem{Titolo}{\emph{\it{Correzioni forti al NLO per la produzione di due fotoni agli acceleratori adronici}\en{Strong correction to NLO for di-photon production in hadron colliders}}}
+\cvitem{Relatore}{\it{Dott. Carlo Oleari}\en{Doct. Carlo Oleari}}
+\cvitem{Descrizione}{\it{Nello svolgimento della tesi è stato affrontato il problema dello scattering protone-protone e il calcolo di sezioni d'urto per tali processi. Le competenze acquisite riguardano il calcolo di integrali in dimensioni non intere e la cancellazione delle divergenze infrarosse nel modello standard in relazione alle simulazioni Monte Carlo.}\en{Through this work I have studied the problems related to proton-proton scattering and cross section calculation in QFT. The acquired skills deal with integral calculation in non-integer dimensions, cancellation of infrared divergences in Standard Model in relation with Monte Carlo simulations.}}
+
+
+\section{\it{Lingue}\en{Languages}}
+
+\cvitemwithcomment{\it{Italiano}\en{Italian}}{\it{Madrelingua}\en{Mothertongue}}{}
+\cvitemwithcomment{\it{Inglese}\en{English}}{\it{Ottimo}\en{Good}}{}
+\cvitemwithcomment{\it{Francese}\en{French}}{\it{Intermedio}\en{Intermediate}}{}
+\cvitemwithcomment{\it{Spagnolo}\en{Spanish}}{\it{Base}\en{Basic}}{}
+
+
+\section{\it{Certificazioni}\en{Certifications}}
+
+\cvitem{2007}{FIRST Certificate in english (University of Cambridge)}
+\cvitem{2006}{Certification DELF (Ministère éducation nationale)}
+
+
+
+\section{\it{Competenze e Capacità Tecniche}\en{Technical Skills And Competences}}
+
+\cvitem{Advanced}{C\#, .NET framework, ASP .NET MVC, Entity Framework, ADO .NET, HTML5, CSS3, Javascript, Ajax, Jquery, AngularJs, Backbone.js, React.js, Google Polymer, NodeJs.}
+\cvitem{Intermediate}{SQL Server, MySQL, MongoDb, \it{Strumenti di Versionamento}\en{Versioning Systems} (SVN, Git), \LaTeX, Linux, Microsoft Windows, Test Driven Development (TDD), Grunt, Gulp, Webpack, Typescript, Progressive Web Apps, Cordova.}
+\cvitem{Basic}{\textsc{java}, hybernate, C++, Scala, F\#.}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{\en{Social Skills And Competences}\it{Capacità e Competenze Relazionali}}
+
+\cvitem{}{\it{Le esperienze formative in laboratorio universitario mi hanno permesso di sviluppare una buona capacità di collaborazione e coordinazione con più persone; lavorando attualmente in un team con metodologia SCRUM, ho maggiormente affinato queste qualità. 
+Mi piace esercitare le mie conoscenze linguistiche leggendo libri e vedendo film in lingua originale. La confidenza così acquisita mi ha inoltre permesso di scrivere la tesi di laurea in inglese.}\en{My experiences in didactic laboratories made me develop good collaboration skills and attitude for coordinations with different people; working and knowing the SCRUM framework emproved these skills further. I like to exercise my linguistic skills in english through reading books and watching films in their original languages. The competences acquired this way, allowed me to write my thesis in English.}}
+
+\section{\en{Orgnization Skills And Competences}\it{Capacità e Competenze Organizzative}}
+
+\cvitem{}{\it{Una forte determinazione mi consente di affrontare con costanza anche lavori lunghi e difficili, mentre una buona capacità di progettazione mi permette di razionalizzare i compiti con metodo, suddividendoli nelle singole parti in modo da poterli più facilmente risolvere. Penso che ogni problema sia mondo a se stante e che comprendere il miglior metodo di sviluppo per affrontarlo sia uno dei più importanti obiettivi per la sua realizzazione.}\en{My strong determination allows me to deal  with the most long and difficult challenges: through my problem solving skills, I can handle every kind of work with method, dividing it in its singular parts in order to solve it with less effort and a grater comprehension.}}
+
+\section{\en{Artistic Skills And Competences}\it{Capacità e Competenze Artistiche}}
+
+\cvitem{}{
+\it{La lettura di libri mi permette di coltivare fantasia e creatività che in passato ho espresso con la recitazione ed ora con giochi di ruolo da tavolo. Ho una buona manualità e precisione che esercito con l’arte degli origami e con la pratica Yoga.}\en{Reading books allows me to cultivate fantasy and creativity I expressed in the past through recitation and role-playing table games. I have good handcraft and precision that I exercise through origami art and Yoga practice.}
+}
+%
+%%----------------------------------------------------------------------------------------
+%%	INTERESTS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
